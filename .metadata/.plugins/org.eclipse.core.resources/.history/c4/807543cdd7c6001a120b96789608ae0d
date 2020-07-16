@@ -1,0 +1,26 @@
+package com.tavisca.assignment.demo;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.tavisca.assignment.beveragesTest.CRUDOpertions;
+import com.tavisca.assignment.exceptions.InvalidOrderException;
+
+@SpringBootTest
+class BevergesDemoApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+	@Mock
+	CRUDOpertions crudOp;
+	
+	
+	 @Test(expected = InvalidOrderException.class)
+	    public void testForOrderWithAllExclusions() {
+	        String order = "Coffee,     -milk,-sugar, -water";
+	        Assert.assertEquals(0.0d, crudOp.getInvoiceFromOrder(order), 0.0d);
+	    }
+}

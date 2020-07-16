@@ -1,0 +1,19 @@
+package com.tavisca.assignment.demo;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class BevergesDemoApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+	
+	 @Test(expected = InvalidOrderException.class)
+	    public void testForOrderWithAllExclusions() {
+	        String order = "Coffee,     -milk,-sugar, -water";
+	        Assert.assertEquals(0.0d, factory.getInvoiceFromOrder(order), 0.0d);
+	    }
+}

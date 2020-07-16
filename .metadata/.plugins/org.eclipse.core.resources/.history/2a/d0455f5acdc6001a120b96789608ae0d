@@ -1,0 +1,13 @@
+package com.tavisca.assignment.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BevergesDemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BevergesDemoApplication.class, args);
+	}
+
+}

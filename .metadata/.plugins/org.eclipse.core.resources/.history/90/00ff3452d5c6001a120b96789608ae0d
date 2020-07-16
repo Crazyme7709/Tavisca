@@ -1,0 +1,13 @@
+package com.tavisca.assignment.demo;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class BevergesDemoApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

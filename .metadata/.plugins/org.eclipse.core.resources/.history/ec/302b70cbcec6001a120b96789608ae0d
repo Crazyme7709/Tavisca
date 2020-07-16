@@ -1,0 +1,25 @@
+package com.tavisca.assignment.beveragesTest;
+
+public class MenuCardAndIngredites {
+
+	private static final String CHAI = "chai";
+	private static final String BANANA_SMOOTHIE = "banana smoothie";
+	private static final String STRAWBERRY_SHAKE = "strawberry shake";
+	private static final String MOJITO = "mojito";
+
+	// String constants for ingredients
+	private static final String SUGAR = "sugar";
+	private static final String WATER = "water";
+	private static final String COFFEE = "coffee";
+	private static final String MILK = "milk";
+	private static final String SODA = "soda";
+	private static final String MINT = "mint";
+
+	// Price constants for base ingredients
+	private static final Double STRAWBERRIES_PRICE = 5.0d;
+	private static final Double BANANA_PRICE = 4.0d;
+	private static final Double TEA_LEAVES_PRICE = 2.0d;
+	private static final Double COFFEE_BEANS_PRICE = 3.0d;
+	private static final Double LEMON_PRICE = 5.5d;
+
+}
